@@ -31,7 +31,7 @@ class iGrid(Grid):
     def render(self, animate=None, saveimg=None, **kw):  
         if animate is not None: self.animate = animate 
         if saveimg is not None: self.saveimg = saveimg
-        self.render_image()
+        self.render_image(saveimg)
 
     def render_image(self, saveimg):
        # prepare and scale the area that will be captured 
